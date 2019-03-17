@@ -41,7 +41,7 @@ body {
     cursor: pointer;
 }
 
-.loginArea button:hover {
+.loginArea button[type=submit]:hover {
     background-color: limegreen;
 }
 
