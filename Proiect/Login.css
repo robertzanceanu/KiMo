@@ -6,27 +6,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
-    /*
-    -webkit-animation: mymove 5s infinite; 
-    animation: mymove 5s infinite;
-    */
+    font-family: sans-serif;
 }
 
-.loginArea {
+.login {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-60%, -60%);
+    left: 30%;
+    top: 20%;
     text-align: center;
-}
-
-img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-40%, -90%);
-    height: 50%;
 }
 
 .loginArea input, button {
@@ -42,6 +29,11 @@ img {
     border: 1.5px solid purple;
 }
 
+.loginArea input:hover {
+    width: 87%;
+    border-color: limegreen;
+}
+
 .loginArea button[type=submit] {
     background-color: purple;
     color: white;
@@ -49,32 +41,11 @@ img {
     cursor: pointer;
 }
 
-.loginArea input:hover {
-    width: 87%;
-    border-color: limegreen;
-}
-
 .loginArea button:hover {
     background-color: limegreen;
 }
-/*
-span:before {
-    content: "\a ";    
-    white-space: pre;
-  }
-  */
+
 span {
     display: block;
     text-align: right;
 }
-  /*
-@-webkit-keyframes mymove {
-    from {background-image: url("images/signUp.jpg");}
-    to {background-image: url("images/2.jpg");}
-  }
-  
-  @keyframes mymove {
-    from {background-image: url("images/signUp.jpg");}
-    to {background-image: url("images/2.jpg");}
-  }
-*/
