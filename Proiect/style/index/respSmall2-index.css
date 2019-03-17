@@ -1,0 +1,23 @@
+.logo{
+    height:40px;
+}
+.subtitle{
+    height:20px;
+}
+.login-wrapper{
+    height:50px;
+    /* left:23%; */
+    top:58%;
+}
+.loginButton{
+    height:50px;
+
+}
+.signin-wrapper{
+    height:50px;
+    /* left:23%; */
+
+}
+.signinButton{
+    height:50px;
+}
