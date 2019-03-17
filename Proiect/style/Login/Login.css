@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("../../images/ceva2.jpg");
-    background-position:center center;  /*vertical si orizontal*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -11,9 +10,13 @@ body {
 
 .login {
     position: absolute;
-    left: 30%;
-    top: 20%;
+    left: 25%;
+    top: 15%;
     text-align: center;
+}
+
+.login img {
+    width: 40%;
 }
 
 .loginArea input, button {
@@ -30,7 +33,7 @@ body {
 }
 
 .loginArea input:hover {
-    width: 87%;
+    width: 100%;
     border-color: limegreen;
 }
 
@@ -39,6 +42,8 @@ body {
     color: white;
     border-radius: 20px;
     cursor: pointer;
+    height: 50px;
+    font-size: 100%;
 }
 
 .loginArea button[type=submit]:hover {
@@ -50,6 +55,15 @@ span {
     text-align: right;
 }
 
+input {
+    font-size: 17px;
+}
+
+input:focus {
+    font-size: 17px;
+}
+
 a:hover {
-    color: red;
+    background-color: red;
+    color: white;
 }

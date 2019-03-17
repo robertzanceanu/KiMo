@@ -6,7 +6,8 @@
 }
 
 .login img {
-    height: 80px;
+    height: 110px;
+    width: 160px;
 }
 
 .loginArea button[type=submit],  .loginArea input {
@@ -14,6 +15,10 @@
     font-size: 16px;
     width: 230px;
     margin: 2%;
+}
+
+.loginArea button[type=submit] {
+    height: 50px;
 }
 
 .loginArea input:hover {
@@ -28,5 +33,5 @@
 #password, a {
     color: black;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 17px;
 }

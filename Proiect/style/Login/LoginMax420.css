@@ -1,31 +1,36 @@
 .login {
     left: 50%;
     top: 50%;
-    transform:translate(-50%,-65%);
+    transform:translate(-50%,-80%);
 }
 
 .login img {
-    height: 80px;
+    height:110px;
+    width: 160px;
 }
 
 .loginArea button[type=submit],  .loginArea input {
-    height: 40px;
-    font-size: 16px;
-    width: 250px;
+    height: 55px;
+    font-size: 23px;
+    width: 300px;
     margin: 1.4%;
 }
 
+.loginArea button[type=submit] {
+    height: 70px;
+}
+
 .loginArea input:hover {
-    height: 40px;
-    width: 350px;
+    height: 55px;
+    width: 370px;
 }
 
 .loginArea input:focus {
-    font-size: 20px;
+    font-size: 23px;
 }
 
 #password, a {
     color: black;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }

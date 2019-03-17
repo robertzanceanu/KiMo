@@ -5,8 +5,8 @@
 }
 
 .login img {
-    height: 160px;
-    width: 300px;
+    height: 100px;
+    width: 150px;
 }
 
 #password, a {
@@ -15,29 +15,28 @@
 }
 
 .loginArea button[type=submit],  .loginArea input {
-    height: 60px;
-    width: 500px;
+    height: 30px;
+    width: 300px;
     font-size: 17px;
-    margin: 2%;
-    font-size: 30px;
+    margin: 1%;
 }
 
 .loginArea button[type=submit] {
-    height: 75px;
+    height: 40px;
 }
 
 .loginArea input:hover {
-    height: 60px;
-    width: 700px;
+    height: 30px;
+    width: 400px;
 
 }
 
 .loginArea input:focus {
-    font-size: 30px;
+    font-size: 17px;
 }
 
 #password, a {
     color: black;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 15px;
 }
