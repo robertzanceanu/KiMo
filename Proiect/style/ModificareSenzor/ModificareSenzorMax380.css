@@ -1,0 +1,23 @@
+.modification {
+    width: 300px;
+    height: 530px;
+}
+
+.modification p {
+    margin-left: 10%;
+}
+
+.modification input {
+    width: 80%;
+    height: 30px;
+    font-size: 13px;
+}
+
+.modification button[type="submit"] {
+    margin-left: 30%;
+    width: 40%;
+}
+
+.modification input:hover {
+    border: 1px solid red;
+}

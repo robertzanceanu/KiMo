@@ -1,0 +1,39 @@
+.modification {
+    margin-top: 27%;
+    margin-left: 5%;
+    width: 360px;
+    height: 600px;
+}
+
+.modification p {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.modification input {
+    width: 80%;
+    height: 40px;
+    font-size: 16px;
+}
+
+.modification button[type="submit"] {
+    margin-left: 30%;
+    width: 40%;
+}
+
+.modification input:hover {
+    border: 1px solid red;
+}
+
+.headerSmaller{
+    height: 60px;
+    font-size: 20px;
+}
+
+.header-logoMobile{
+    margin-left:20%;
+}
+
+.footer {
+    font-size: 13px;
+}
