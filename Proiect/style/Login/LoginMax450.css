@@ -12,11 +12,11 @@
     font-weight: bold;
 }
 
-.loginArea button[type=submit],  .loginArea input {
+.loginArea button[type=submit], .loginArea input {
     height: 50px;
     font-size: 20px;
     width: 320px;
-    margin: 2;
+    margin: 2px;
 }
 
 .loginArea input:hover {
