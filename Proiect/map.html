@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
         <link rel="stylesheet" href="./style/map/map.css">
         <link rel="stylesheet" media="(min-width:1400px)" href="./style/map/respLarge-map.css">
         <link rel="stylesheet" media="(max-width:1050px)" href="./style/map/respMedium-map.css">
@@ -10,53 +9,35 @@
         <link rel="stylesheet" media="(max-width:650px)" href="./style/map/respMedium4-map.css">
         <link rel="stylesheet" media="(max-width:450px)" href="./style/map/respSmall-map.css">
         <link rel="stylesheet" media="(max-width:361px)" href="./style/map/respSmall2-map.css">
-        <title>Map</title>
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="header">
-            <img class="header-logo" src="./images/pageLogo.png" alt="Logo pagina">
+            <img class="header-logo" src="./images/pageLogo.png">
             <div class="pages">
                 <a href="map.html">Harta</a>
                 <a href="addSenzor.html">Adaugare senzor</a>
                 <a href="ModificareSenzor.html">Modificare senzor</a>
-                <a>Actualizare profil</a>
+                <a href="ActualizareProfil.html">Actualizare profil</a>
                 <a href="index.html">Logout</a>
-            </div>
-            <div class="notification">
-                <input type="checkbox" id="notificationList">
-                <label for="notificationList" class="notifications"><img src="./images/notification_bell.png" alt="Clopotel"></label>
-                <div class="notifi">
-                    <ul>
-                        <li>Nu sunt notificari noi!</li>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="headerSmaller">
-            <img class="header-logoMobile" src="./images/pageLogo.png" alt="Logo">
+            <img class="header-logoMobile" src="./images/pageLogo.png">
             <div class="collapsible-menu">
                 <input type="checkbox" id="menuToggler"/>
-                <label for="menuToggler" class="Menu"><img src="./images/menu.png" alt="Hamburger">Menu</label>
+                <label for="menuToggler" class="Menu">Menu</label>
            
                 <div class="pagesMobile">
                     <ul>
                         <li><a href="map.html">Harta</a></li>
                         <li><a href="addSenzor.html">Adaugare senzor</a></li>
                         <li><a href="ModificareSenzor.html">Modificare senzor</a></li>
-                        <li><a>Actualizare profil</a></li>
-                        <li><a>Logout</a></li>
+                        <li><a href="ActualizareProfil.html">Actualizare profil</a></li>
+                        <li><a href="index.html">Logout</a></li>
                     </ul>
-                </div>
-                <div class="notificationSmall">
-                    <input type="checkbox" id="notificationListSmall">
-                    <label for="notificationListSmall" class="notificationsSmall"><img src="./images/notification_bell.png" alt="Clopotel"></label>
-                    <div class="notifiSmall">
-                        <ul>
-                            <li>Nu sunt notificari noi!</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -68,7 +49,7 @@
                       var uluru = {lat: 47.151726, lng: 27.587914};
                     // The map, centered at Uluru
                       var map = new google.maps.Map(
-                      document.getElementById('map'), {zoom: 15, center: uluru});
+                      document.getElementById('map'), {zoom: 4, center: uluru});
                       // The marker, positioned at Uluru
                       var marker = new google.maps.Marker({position: uluru, map: map});
                     }
