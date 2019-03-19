@@ -45,8 +45,7 @@
     padding:10px 10px 10px 20px; 
     cursor: pointer;
     margin-left:5%;
-    background: url("../../images/menu.png") no-repeat left center;
-}
+    }
 input#menuToggler{
     display: none;
     padding:20px;
@@ -62,5 +61,47 @@ input#menuToggler{
 
 }
 input:checked ~ .pagesMobile{
+    max-height: 100%;
+}
+.notificationSmall{
+    margin-left:80%;
+    margin-top:-4%;
+    background-color:#202023;
+
+}
+
+.notificationSmall ul {
+    list-style-type: none;
+    padding: 0;
+}
+.notificationSmall a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+.notificationSmall label{
+    font-family: "Monotype Corsiva";
+    color:white;
+    padding:0px 0px 0px 10px; 
+    cursor: pointer;
+    /* margin-left:5%; */
+}
+input#notificationListSmall{
+    display: none;
+    padding:20px;
+    
+}
+.notifiSmall{
+    max-height: 0;
+    overflow: hidden;
+    font-family: "Monotype Corsiva";
+    color:white;
+    background-color:#202023;
+    /* padding: 10px 10px 10px 10px; */
+    z-index:10;
+
+}
+input:checked ~ .notifiSmall{
     max-height: 100%;
 }

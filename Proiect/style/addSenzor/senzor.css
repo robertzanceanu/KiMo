@@ -33,6 +33,50 @@
 .headerSmaller{
     display:none;
 }
+.notification{
+    margin-left:15%;
+    margin-top:2%;
+    background-color:#202023;
+
+}
+
+.notification ul {
+    list-style-type: none;
+    padding: 0;
+}
+.notification a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+.notification label{
+    font-family: "Monotype Corsiva";
+    color:white;
+    padding:0px 0px 0px 20px; 
+    cursor: pointer;
+    /* margin-left:5%; */
+    
+    
+}
+input#notificationList{
+    display: none;
+    padding:20px;
+
+}
+.notifi{
+    max-height: 0;
+    overflow: hidden;
+    font-family: "Monotype Corsiva";
+    color:white;
+    background-color:#202023;
+    padding: 0 0 0 10px;
+    z-index:10;
+
+}
+input:checked ~ .notifi{
+    max-height: 100%;
+}
 .addSensor{
     margin-top:8%;
     margin-left:25%;
