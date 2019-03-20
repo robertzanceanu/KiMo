@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
     <head>
         <meta charset="utf-8">
         <title> Harta </title>
@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="header">
-            <img class="header-logo" src="./images/pageLogo.png">
+            <img class="header-logo" src="./images/pageLogo.png" alt="Logo">
             <div class="pages">
                 <a href="map.html">Harta</a>
                 <a href="addSenzor.html">Adaugare senzor</a>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="headerSmaller">
-            <img class="header-logoMobile" src="./images/pageLogo.png">
+            <img class="header-logoMobile" src="./images/pageLogo.png" alt="Logo">
             <div class="collapsible-menu">
                 <input type="checkbox" id="menuToggler"/>
                 <label for="menuToggler" class="Menu">Menu</label>
@@ -51,7 +51,7 @@
                       var uluru = {lat: 47.151726, lng: 27.587914};
                     // The map, centered at Uluru
                       var map = new google.maps.Map(
-                      document.getElementById('map'), {zoom: 4, center: uluru});
+                      document.getElementById('map'), {zoom: 15, center: uluru});
                       // The marker, positioned at Uluru
                       var marker = new google.maps.Marker({position: uluru, map: map});
                     }
