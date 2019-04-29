@@ -1,0 +1,43 @@
+.login {
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-60%);
+}
+
+.login img {
+    height: 100px;
+    width: 170px;
+}
+
+#password, a {
+    color: black;
+    font-weight: bold;
+}
+
+.loginArea button[type=submit],  .loginArea input {
+    height: 40px;
+    width: 350px;
+    font-size: 20px;
+    margin-bottom: 0.1%;
+    margin-right: 10%;
+}
+
+.loginArea button[type=submit] {
+    height: 50px;
+}
+
+.loginArea input:hover {
+    height: 40px;
+    width: 500px;
+
+}
+
+.loginArea input:focus {
+    font-size: 20px;
+}
+
+#password, a {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}

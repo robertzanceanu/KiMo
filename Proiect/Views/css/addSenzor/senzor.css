@@ -1,0 +1,145 @@
+header{    
+    height:72px;
+    background:#202023;
+    width:100%;
+    border:0px;
+    margin:0px auto;
+    position:fixed;
+    padding:0px;
+    top:0px;
+    right:0px;
+    left:0px;
+    display:flex;
+}
+.header-logo{
+    margin-left:10%;
+}
+header .pages{
+    display:flex;
+    margin-left:3%;
+    margin-top:2%; 
+    color:white;
+}
+header a{
+    font-family: "Monotype Corsiva";
+    font-size:120%;
+    margin-left:10%;
+    float:left;
+    text-decoration: none;
+    color:white;
+}
+
+.headerSmaller{
+    display:none;
+}
+.notification{
+    margin-left:15%;
+    margin-top:2%;
+    background-color:#202023;
+
+}
+
+.notification ul {
+    list-style-type: none;
+    padding: 0;
+}
+.notification a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+.notification label{
+    font-family: "Monotype Corsiva";
+    color:white;
+    padding:0px 0px 0px 20px; 
+    cursor: pointer;
+    /* margin-left:5%; */
+    
+    
+}
+input#notificationList{
+    display: none;
+    padding:20px;
+
+}
+.notifi{
+    max-height: 0;
+    overflow: hidden;
+    font-family: "Monotype Corsiva";
+    color:white;
+    background-color:#202023;
+    padding: 0 0 0 10px;
+    z-index:10;
+
+}
+input:checked ~ .notifi{
+    max-height: 100%;
+}
+.addSensor{
+    margin-top:8%;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-bottom:8%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 #202023, 0 6px 20px 0 #202023;
+    text-align:center;
+    overflow:auto;
+    
+}
+.addSensor h2{
+    font-family: "Monotype Corsiva";
+
+}
+.addSensor input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Monotype Corsiva";
+  }
+.addSensor p{
+    text-align:left;
+    margin-left:20%;
+    font-family: "Monotype Corsiva";
+
+}
+.addSensor button{
+    background-color:#202023;
+    border: none;
+    color:white;
+    padding: 15px 70px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    text-align:left;
+    display: block;
+    margin-left:35%;
+    border-radius: 4px;
+}
+footer{
+    height:50px;
+    width:100%;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    background:#202023;
+    position:fixed;
+
+}
+footer .footer-text{
+    display:flex;
+    margin-left:10%;
+    text-align: center;
+    margin-top:1%;
+}
+footer a{
+    color:white;
+    margin-left:1%;
+    font-family: "Monotype Corsiva";
+    font-size:120%;    
+}

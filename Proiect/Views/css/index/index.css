@@ -1,0 +1,91 @@
+.firstPage{
+    background-image:url("../../images/ceva2.jpg"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;  /*vertical si orizontal*/
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-attachment: fixed;
+    /* height: 500px; */
+}
+.transpBox{
+    /* margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);  */
+    position: absolute;
+    top:50%;    
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70%;
+    height:500px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,0.5);
+    /* padding:40px; */
+}
+.logo{
+    position:relative;
+    top:10%;
+    left:25%;
+    height:auto;
+}
+.subtitle{
+    position:absolute;
+    top:30%;
+    left:38%;
+}
+.login-wrapper{
+    position:absolute;
+    top:50%;
+    left:35%;
+}
+.loginButton{
+    display:block;
+}
+
+.loginButton:hover .loginButton{
+    opacity:1;
+}
+.overlayLogin{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition:.5s ease;
+}
+.login-wrapper:hover .overlayLogin{
+    opacity:1;
+}
+
+.signin-wrapper{
+    position: absolute;
+    top:70%;
+    left:35%;
+}
+.siginButton{
+    display:block;
+}
+.signin-wrapper:hover .siginButton{
+    opacity:1;
+}
+.overlaySignin{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition:.5s ease;
+}
+.signin-wrapper:hover .overlaySignin{
+    opacity:1;
+    
+}

@@ -1,0 +1,26 @@
+header h1 {
+    font-size: 80px;
+}
+
+.signUpArea {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -7%);
+    width: 600px;
+}
+
+.signUpArea h2 {
+    font-size: 60px;
+}
+
+.signUpArea p {
+    font-size: 40px;
+}
+
+.signUpArea input {
+    font-size: 35px;
+}
+
+.signUpArea button {
+    font-size: 40px;
+}

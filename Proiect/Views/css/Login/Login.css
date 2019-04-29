@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../images/ceva2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.login {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    text-align: center;
+}
+
+.login img {
+    width: 40%;
+}
+
+.loginArea input, button {
+    width: 70%;
+    border: none;
+    height: 40px;
+    margin: 2.5%;
+    text-align: center;
+}
+
+.loginArea input {
+    background: none;
+    border: 1.5px solid purple;
+}
+
+.loginArea input:hover {
+    width: 100%;
+    border-color: limegreen;
+}
+
+.loginArea button[type=submit] {
+    background-color: purple;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 100%;
+}
+
+.loginArea button[type=submit]:hover {
+    background-color: limegreen;
+}
+
+span {
+    display: block;
+    text-align: right;
+}
+
+input {
+    font-size: 17px;
+}
+
+input:focus {
+    font-size: 17px;
+}
+
+a:hover {
+    background-color: red;
+    color: white;
+}
