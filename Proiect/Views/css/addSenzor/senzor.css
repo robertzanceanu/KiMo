@@ -19,7 +19,13 @@ header .pages{
     margin-left:3%;
     margin-top:2%; 
     color:white;
+    list-style: none;
 }
+
+.pages li {
+    margin-left: 5%;
+}
+
 header a{
     font-family: "Monotype Corsiva";
     font-size:120%;
