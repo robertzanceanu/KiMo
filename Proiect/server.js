@@ -22,7 +22,7 @@ var port = 8080;
 const server = http.createServer(function (req,res){
     styleController(req, res); 
     indexController(req, res);
-    signInController(req, res);
+    signInController(req, res,user);
     loginController(req, res);
     mapController(req, res);
     adaugareSenzorController(req, res);

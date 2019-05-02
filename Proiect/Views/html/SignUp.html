@@ -23,19 +23,20 @@
 
         <div class="signUpArea">  
             <h2> Create a New Account </h2> 
-            <form action="map.html">
+            <form action="/signup" method="POST" class="signUpForm">
                 <p> First Name </p>
-                    <input type="text" placeholder="enter first name" name="firstName" required>
+                    <input type="text" placeholder="enter first name" name="firstName" id="firstName" required>
                 <p> Last Name </p>
-                    <input type="text" placeholder="enter last name" name="lastName" required>
+                    <input type="text" placeholder="enter last name" name="lastName" id="lastName" required>
                 <p> Email </p>
-                    <input type="email" placeholder="enter email address" name="email" required>
+                    <input type="email" placeholder="enter email address" name="email" id="email" required>
                 <p> Password </p>
-                    <input type="password" placeholder="create password" name="password" required>
+                    <input type="password" placeholder="create password" name="password" id="password" required>
                 <p> Phone Number </p>
-                    <input type="tel" placeholder="enter phone number" name="phone" required>
+                    <input type="tel" placeholder="enter phone number" name="phone" id="phoneNumber" required>
                 <button type="submit"><strong> Submit </strong></button>    
             </form>
         </div>
+        <script src="../javascript/signUp.js"></script>
     </body>
 </html>
