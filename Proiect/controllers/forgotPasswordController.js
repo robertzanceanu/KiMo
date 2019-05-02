@@ -1,5 +1,7 @@
 var fs = require('fs');
-module.exports = function (req,res) {
+var nodemailer = require('nodemailer');
+
+module.exports = function (req, res, user) {
     if(req.url === '/forgotPassword' && req.method === 'GET') {
         var filename = './Views/html/ForgotPassword.html';
         fs.readFile(filename, function (err,html){
@@ -10,5 +12,58 @@ module.exports = function (req,res) {
             res.write(html);
             res.end();
         });
+    }
+    if(req.url === '/forgotPassword' && req.method === 'POST') {
+        req.on('data', data => {
+            var post = JSON.parse(data);
+           
+            var email = post.email;
+            
+            user.findOne({email: email}, function(err, user) {
+                if(err) {
+                    console.log(err);
+                }
+                else 
+                    if(!email) {
+                        console.log("Email-ul introdus nu exista in bd");
+                    }
+                    else {
+                        var myEmail = 'alexandra.rotaru11223344@gmail.com';
+                        var myPassword = 'parolamea11';
+
+                        let newPassword ='';
+                        var sizePassword = 8;
+                        var charset = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890";
+                        for(var i=0; i<sizePassword; i++) {
+                            newPassword += charset.charAt(Math.floor(Math.random() * charset.length));
+                        }
+            
+                        var transporter = nodemailer.createTransport({
+                            service: 'gmail',
+                            auth: {
+                                user: myEmail,
+                                pass: myPassword
+                            }
+                        });
+                        
+                        var mailOption = {
+                            from: myEmail,
+                            to: email,
+                            subject: 'New Password',
+                            html: `Aceasta este noua dumneavoastra parola: <b>${newPassword}</b>`
+                        };
+            
+                        transporter.sendMail(mailOption, function(error, info) {
+                            if(error) {
+                                throw err;
+                            }
+                            else {
+                                console.log("Email trimis cu succes");
+                            }
+                        });
+                    }
+                
+            });
+        }); 
     }
 }

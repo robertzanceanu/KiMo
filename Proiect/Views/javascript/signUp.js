@@ -4,16 +4,18 @@ const formToJSON = elements => [].reduce.call(elements, (data,element) => {
     }
     return data;
 }, {});
+
 const isValidElement = element => {
     return element.name && element.value;
 }
+
 const handleFormSubmit = event => {
     // opreste formularul din a submite datele atata timp cat le prelucram prin ajax
     event.preventDefault();
 
     //ia datele din formular
     const data = formToJSON(form.elements);
-    console.log(data);
+    //console.log(data);
     // transmitele datele ca un obiect JSON
     const dataContainer = document.getElementsByClassName('signUpForm')[0];
 
@@ -27,9 +29,6 @@ const handleFormSubmit = event => {
 const form = document.getElementsByClassName('signUpForm')[0];
     form.addEventListener('submit',handleFormSubmit);
 function sendPost(data) {
-    console.log("1");
-    console.log(data);  
-    
     return fetch('/signup',{
         method: "POST",
         mode: "cors",

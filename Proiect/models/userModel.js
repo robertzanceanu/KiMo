@@ -1,15 +1,3 @@
-// const mongoose = require('mongoose')
-//     , Schema = mongoose.Schema
-//     , userSchema = new Schema({
-//         firstName: String,
-//         lastName: String,
-//         email: String,
-//         password: String,
-//         phoneNumber:String
-//     })
-//     , user = mongoose.model('user',userSchema);
-// module.exports = user;
-
 module.exports = mongoose => {
     var userSchema = new mongoose.Schema({
         //id: String,
@@ -17,9 +5,9 @@ module.exports = mongoose => {
         lastName: String,
         email: String,
         password: String,
-        phoneNumber:String
+        phoneNumber: String
     });
-    var user = mongoose.model('user', userSchema);
+    var user = mongoose.model('users', userSchema);
 
     return user;
 }

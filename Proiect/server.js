@@ -22,13 +22,13 @@ var port = 8080;
 const server = http.createServer(function (req,res){
     styleController(req, res); 
     indexController(req, res);
-    signInController(req, res,user);
-    loginController(req, res);
+    signInController(req, res, user);
+    loginController(req, res, user);
     mapController(req, res);
     adaugareSenzorController(req, res);
     modificareSenzorController(req, res);
     actualizareProfilController(req, res);
-    forgotPasswordController(req, res);
+    forgotPasswordController(req, res, user);
 });
 
 server.listen(port, ()=> {
