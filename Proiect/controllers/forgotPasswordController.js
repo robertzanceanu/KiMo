@@ -1,5 +1,6 @@
 var fs = require('fs');
 var nodemailer = require('nodemailer');
+var objectId = require('mongodb').ObjectID;
 
 module.exports = function (req, res, user) {
     if(req.url === '/forgotPassword' && req.method === 'GET') {
@@ -21,7 +22,7 @@ module.exports = function (req, res, user) {
             
             user.findOne({email: email}, function(err, user) {
                 if(err) {
-                    console.log(err);
+                    throw err;
                 }
                 else 
                     if(!email) {
@@ -58,6 +59,13 @@ module.exports = function (req, res, user) {
                                 throw err;
                             }
                             else {
+                                user.password = newPassword;
+
+                                user.save(function(err) {
+                                    if(err) {
+                                        throw err;
+                                    }
+                                });
                                 console.log("Email trimis cu succes");
                             }
                         });

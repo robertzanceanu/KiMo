@@ -22,7 +22,7 @@ module.exports = function (req, res, user) {
 
             user.findOne({email: email, password: password}, function(err, user) {
                 if(err) {
-                    console.log(err);
+                    throw err;
                 }
                 else 
                     if(user) {
