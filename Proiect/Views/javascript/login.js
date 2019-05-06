@@ -1,5 +1,5 @@
-const formToJSON = elements => [].reduce.call(elements, (data,element) => {
-    if (isValidElement(element)){
+const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+    if (isValidElement(element)) {
         data[element.name] = element.value;
     }
     return data;
@@ -20,26 +20,45 @@ const handleFormSubmit = event => {
     const dataContainer = document.getElementsByClassName('loginForum')[0];
 
     // sa faca outputul valid
-    dataContainer.textContent = JSON.stringify(data,null," ");
+    dataContainer.textContent = JSON.stringify(data, null, " ");
     sendPost(dataContainer.textContent)
-    .then(data => console.log(JSON.stringify(data)))
-    .catch(error => console.error(error));
+        .then(data => console.log(JSON.stringify(data)))
+        .catch(error => console.error(error));
     //console.log(dataContainer);
 };
 const form = document.getElementsByClassName('loginForum')[0];
-    form.addEventListener('submit',handleFormSubmit);
+form.addEventListener('submit', handleFormSubmit);
 function sendPost(data) {
-    return fetch('/login',{
+    return fetch('/login', {
         method: "POST",
         mode: "cors",
         cache: "no-cache",
-        credentials:"same-origin",
+        credentials: "same-origin",
         headers: {
             "Content-Type": "application/json"
         },
         redirect: "follow",
-        referrer:"no-refferer",
+        referrer: "no-refferer",
         body: data
     })
-    .then(response => response.json());
+        .then(response => {
+            if (response.ok) {
+                if (response.status == 200) {
+                    if (response.statusText === "map")
+                        window.location.pathname = '/map';
+                    else {
+                        response.json();
+                    }
+                }
+                }
+                else {
+                    if (response.status == 401) {
+                        if (response.statusText === "incorect") {
+                            alert("Datele introduse sunt incorecte!");
+                            location.reload();
+                        }
+                    }
+                }
+            }
+        );
 }
