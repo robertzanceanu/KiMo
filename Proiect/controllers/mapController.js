@@ -1,5 +1,5 @@
 var fs = require('fs');
-module.exports = function (req,res) {
+module.exports = function (req, res) {
     if(req.url === '/map' && req.method === 'GET') {
         var filename = './Views/html/map.html';
         fs.readFile(filename, function (err,html){

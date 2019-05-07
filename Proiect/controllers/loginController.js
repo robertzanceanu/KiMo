@@ -20,21 +20,18 @@ module.exports = function (req, res, user) {
             var email = post.email;
             var password = post.password;
 
-            user.findOne({ email: email, password: password }, function (err, user) {
+            user.findOne({ email: email, password: password }, function (err, user) {                
                 if (err) {
                     throw err;
                 }
                 else
                     if (user) {
                         res.writeHead(200, "map", { "Content-Type": "text/plain" });
-                        //res.redirect("/map");
                         res.end();
-                        console.log("Map page");
                     }
                     else {
                         res.writeHead(401, "incorect", { "Content-Type": "text/plain" });
                         res.end();
-                        console.log("Datele introduse nu sunt corecte");
                     }
             });
         });

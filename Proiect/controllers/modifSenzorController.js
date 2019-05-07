@@ -1,5 +1,5 @@
 var fs = require('fs');
-module.exports = function (req,res) {
+module.exports = function (req, res, sensorKid) {
     if(req.url === '/modificareSenzor' && req.method === 'GET') {
         var filename = './Views/html/ModificareSenzor.html';
         fs.readFile(filename, function (err,html){

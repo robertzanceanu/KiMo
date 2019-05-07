@@ -44,17 +44,15 @@
         </div>
         <div class="addSensor">
             <h2>Adauga senzorul pentru copilul tau!</h2>
-            <form action="map.html">
+            <form action="/adaugareSenzor" method="POST" class="addSensor-form">
                 <p>Nume copil</p>
-                    <input type="text" placeholder="Introduceti numele" name="childName" required>
-                <p>Distanta minima da indepartare</p>
-                    <input type="text" placeholder="Introduceti distanta" name="distance" required>
+                    <input type="text" placeholder="Introduceti numele" name="kidName" required>
                 <p>Varsta Copilului</p>
                     <input type="text" placeholder="Introduceti varsta" name="age" required>
                 <p>Adresa de monitorizare</p>
                     <input type="text" placeholder="Introduceti prima adresa" name="adress" required>
-                <p>Adresa de monitorizare 2</p>
-                    <input type="text" placeholder="Introduceti cea de-a doua adresa" name="adress" >
+                <p>Distanta maxima de indepartare (km)</p>
+                    <input type="text" placeholder="Introduceti distanta" name="distance" required>
                 <button type="submit"><strong> Submit </strong></button>
                 </form>
         </div>
@@ -65,5 +63,7 @@
                 <a>Grupa A2</a>
             </div>
         </footer>
+
+        <script src="../javascript/addSensor.js"></script>
     </body>
 </html>

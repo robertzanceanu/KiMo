@@ -24,9 +24,10 @@ module.exports = function (req, res, user) {
                 if(err) {
                     throw err;
                 }
-                else 
-                    if(!email) {
-                        console.log("Email-ul introdus nu exista in bd");
+                else {
+                    if(!user) {
+                        res.writeHead(401, "incorect", { "Content-Type": "text/html" });
+                        res.end();
                     }
                     else {
                         var myEmail = 'alexandra.rotaru11223344@gmail.com';
@@ -66,10 +67,14 @@ module.exports = function (req, res, user) {
                                         throw err;
                                     }
                                 });
-                                console.log("Email trimis cu succes");
+                                //console.log("Email trimis cu succes");
                             }
                         });
+
+                        res.writeHead(200, "login", { "Content-Type": "text/plain" });
+                        res.end();
                     }
+                }
                 
             });
         }); 

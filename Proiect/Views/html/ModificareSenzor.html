@@ -46,15 +46,13 @@
 
         <div class="modification">
             <h2> Actualizeaza informatiile, pentru o mai buna supraveghere a celor mici. </h2>
-                <form action="map.html">
-                    <p>Distanta maxima de indepartare</p>
-                        <input type="text" placeholder="Introduceti distanta" name="distance">
-                    <p>Varsta copilului</p>
-                        <input type="text" placeholder="Introduceti varsta" name="age">
+                <form action="/modificareSenzor" method="POST" class="modifSensor-form">
+                    <p>Nume copil</p>
+                        <input type="text" placeholder="Introduceti numele copilului" name="kidName" required>
                     <p>Adresa de monitorizare</p>
                         <input type="text" placeholder="Introduceti prima adresa" name="adress">
-                    <p>Adresa de monitorizare 2</p>
-                        <input type="text" placeholder="Introduceti cea de-a doua adresa" name="adress" >
+                    <p>Distanta maxima de indepartare (km)</p>
+                        <input type="text" placeholder="Introduceti distanta" name="distance">
                     <button type="submit"><strong> Submit </strong></button>
                 </form>
         </div>
@@ -66,6 +64,5 @@
                 <a>Grupa A2</a>
             </div>
         </footer>
-
     </body>
 </html>

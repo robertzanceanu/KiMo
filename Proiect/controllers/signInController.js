@@ -56,7 +56,6 @@ module.exports = function (req, res, user) {
                                     res.end();
                                     console.log("Numarul introdus nu este corect.");
                                 }
-
                                     else {
                                             newUser.save(function (err, usr){
                                                 if(err) return console.error(err);

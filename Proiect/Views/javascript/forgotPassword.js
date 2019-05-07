@@ -41,5 +41,23 @@ function sendPost(data) {
         referrer:"no-refferer",
         body: data
     })
-    .then(response => response.json());
+    .then(response => {
+        if (response.ok) {
+            if (response.status == 200) {
+                if (response.statusText === "login")
+                    window.location.pathname = '/login';
+                else {
+                    response.json();
+                }
+            }
+            }
+            else {
+                if (response.status == 401) {
+                    if (response.statusText === "incorect") {
+                        alert("Adresa de email introdusa nu este corect!");
+                        location.reload();
+                    }
+                }
+            }
+        });
 }
